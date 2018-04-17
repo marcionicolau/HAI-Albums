@@ -1,16 +1,6 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 
-const Header = props => {
-  const { textStyle, viewStyle } = styles;
-  return (
-    <View style={viewStyle}>
-      <Text style={textStyle}>{props.header}</Text>
-    </View>
-  );
-};
-
-const styles = {
+export default StyleSheet.create({
   viewStyle: {
     backgroundColor: '#f8f8f8',
     justifyContent: 'center',
@@ -29,6 +19,4 @@ const styles = {
   textStyle: {
     fontSize: 20
   }
-};
-
-export default Header;
+});
